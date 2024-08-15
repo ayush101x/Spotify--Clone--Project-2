@@ -49,6 +49,7 @@
     width: 85px;
     height: 15px;
     align-items: center;
+    margin-left: 15px;
 }
 .english-capsule{
     align-items: center;
@@ -56,4 +57,8 @@
     font-weight: 400;
     margin: 3px;
     padding: 7px;
+}
+.arrow-image-navbar{
+    width: 15px;
+    padding: 10px;
 }

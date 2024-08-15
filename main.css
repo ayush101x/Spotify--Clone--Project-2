@@ -1,16 +1,17 @@
 
 .left{
-    width: 25vw;
+    width: 20vw;
     padding: 4px;;
     
+}
+.right{
+    width: 80vw;
+    min-height: 10vh;
 }
 .logo{
     margin-top: -3px;
 }
 
-.right{
-    width: 75vw;
-}
 .home ul li {
     display: flex;
     width: 23px;
@@ -37,6 +38,7 @@
 .library{
     position: relative;
     min-height: 72.5vh;
+    margin-top: 10px;
 }
 .grid{
     display: grid;
@@ -58,3 +60,9 @@
     color: gray;
 }
 
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, .5);
+}
