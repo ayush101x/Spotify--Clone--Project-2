@@ -1,26 +1,60 @@
-.container{
-    /* background-color: #000000; */
-}
+
 .left{
     width: 25vw;
-    /* color: white; */
-    /* background-color: #121212; */
-    margin: 5px;
-    padding: 34px;
+    padding: 4px;;
     
+}
+.logo{
+    margin-top: -3px;
 }
 
 .right{
     width: 75vw;
-    /* color: white; */
-    /* background-color: #121212; */
-    padding: 34px;
-    margin: 5px;
 }
-
 .home ul li {
     display: flex;
-    width: 15px;
+    width: 23px;
+    align-items: center;
     gap: 15px;
     list-style: none;
+    padding-top: 20px;
+    font-weight: bold;
+    font-size: 16px;
 }
+.home{
+    padding: 23px;
+}
+.Library_logo{
+    width: 25px;
+}
+.heading{
+    align-items: center ;
+}
+.heading h2{
+    font-size: 16px;
+    padding-left: 15px;
+}
+.library{
+    position: relative;
+    min-height: 72.5vh;
+}
+.grid{
+    display: grid;
+    grid-column: 1fr 1fr;
+    grid-row: 1fr 1fr 1fr;
+    padding: 10px;
+    gap: 10px;
+}
+
+.footer{
+    gap: 10px;
+    position: absolute;
+    bottom: 80px;
+}
+.footer a{
+    font-size: 11px;
+    font-weight: bold;
+    padding: 5px;
+    color: gray;
+}
+

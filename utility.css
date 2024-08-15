@@ -41,11 +41,19 @@
     padding: 10px;
 }
 .capsule{
-    padding-top: 30px;
+    display: flex;
     border: 2px solid white;
-    padding: 5px;
-    font-size: 14xp;
+    border-radius: 20px;
+    margin-top: 30px;
+    padding: 7px;
+    width: 85px;
+    height: 15px;
+    align-items: center;
+}
+.english-capsule{
+    align-items: center;
+    font-size: 10xp;
     font-weight: 400;
-    margin: 10px;
-
+    margin: 3px;
+    padding: 7px;
 }
