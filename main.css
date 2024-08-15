@@ -1,0 +1,26 @@
+.container{
+    /* background-color: #000000; */
+}
+.left{
+    width: 25vw;
+    /* color: white; */
+    /* background-color: #121212; */
+    margin: 5px;
+    padding: 34px;
+    
+}
+
+.right{
+    width: 75vw;
+    /* color: white; */
+    /* background-color: #121212; */
+    padding: 34px;
+    margin: 5px;
+}
+
+.home ul li {
+    display: flex;
+    width: 15px;
+    gap: 15px;
+    list-style: none;
+}
