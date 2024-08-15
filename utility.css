@@ -59,6 +59,57 @@
     padding: 7px;
 }
 .arrow-image-navbar{
-    width: 15px;
+    justify-content: center;
+    width: 18px;
     padding: 10px;
+    border: 2px solid black;
+    border-radius: 50px;
+    margin: 3px;
+}
+
+.playicon svg{
+    width: 50px;
+    position: absolute;
+    top: 126px;
+    left: 130px;
+    /* opacity: 0; */
+    /* transition: all 1s ease-out; */
+}
+/* .playicon svg :hover{
+    opacity: 1;
+    top: 126px;
+} */
+
+/* Container styles for scroll bar*/
+.scroll-container {
+    width: 98.4%; /* Adjust as needed */
+    height: 85vh;
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+    overflow-y: auto; /* Ensure vertical scrollbar is shown if needed */
+    padding: 10px;
+    background-color: #1a1a1a; /* Dark background color for the container */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Optional: shadow for better appearance */
+}
+
+/* General scrollbar styles for the container */
+.scroll-container::-webkit-scrollbar {
+    width: 12px; /* Width of the scrollbar */
+    background-color: #2a2a2a; /* Background color of the scrollbar track */
+}
+
+/* Track (part of the scrollbar not covered by the thumb) */
+.scroll-container::-webkit-scrollbar-track {
+    background-color: #2a2a2a; /* Track color */
+    border-radius: 6px; /* Rounded corners for the track */
+}
+
+/* Handle (the draggable part of the scrollbar) */
+.scroll-container::-webkit-scrollbar-thumb {
+    background-color: #444; /* Handle color */
+    border-radius: 6px; /* Rounded corners for the handle */
+}
+
+/* Handle on hover */
+.scroll-container::-webkit-scrollbar-thumb:hover {
+    background-color: #666; /* Handle color on hover */
 }

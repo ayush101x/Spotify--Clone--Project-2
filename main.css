@@ -1,14 +1,16 @@
-
-.left{
+.left {
     width: 20vw;
-    padding: 4px;;
-    
+    padding: 4px;
+
 }
-.right{
+
+.right {
     width: 80vw;
-    min-height: 10vh;
+    margin-left: -4px;
+    padding: 4px;
+    max-height: 97.8vh;
 }
-.logo{
+.logo {
     margin-top: -3px;
 }
 
@@ -22,25 +24,31 @@
     font-weight: bold;
     font-size: 16px;
 }
-.home{
+
+.home {
     padding: 23px;
 }
-.Library_logo{
+
+.Library_logo {
     width: 25px;
 }
-.heading{
-    align-items: center ;
+
+.heading {
+    align-items: center;
 }
-.heading h2{
+
+.heading h2 {
     font-size: 16px;
     padding-left: 15px;
 }
-.library{
+
+.library {
     position: relative;
-    min-height: 72.5vh;
+    min-height: 72vh;
     margin-top: 10px;
 }
-.grid{
+
+.grid {
     display: grid;
     grid-column: 1fr 1fr;
     grid-row: 1fr 1fr 1fr;
@@ -48,21 +56,90 @@
     gap: 10px;
 }
 
-.footer{
+.footer {
     gap: 10px;
     position: absolute;
     bottom: 80px;
 }
-.footer a{
+
+.footer a {
     font-size: 11px;
     font-weight: bold;
     padding: 5px;
     color: gray;
 }
 
-.header{
+.header {
     display: flex;
+    margin-top: 5px;
     justify-content: space-between;
-    padding: 20px;
-    background-color: rgba(0, 0, 0, .5);
+    padding: 12px;
+    align-items: center;
+}
+
+.signupbtn {
+
+    margin-right: 30px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.loginbtn {
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.button button {
+    border-radius: 30px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 110px;
+}
+
+/* below navigation Bar  ==>  Card Container */
+
+.spotifyplaylist {
+    padding: 15px;
+    font: bold;
+    font-size: 12px;
+    margin-top: -5PX;
+}
+
+.spotifyplaylist .card {
+    width: 180px;
+    height: 250px;
+    margin-top: 30px;
+    margin-right: 20px;
+    padding: 10px 10px 10px 10px;
+}
+
+.cardcontainer>:hover {
+    background-color: rgba(128, 128, 128, 0.119);
+    border-radius: 8px;
+
+}
+
+.card img {
+    width: 100%;
+    object-fit: contain;
+    border-radius: 8px;
+}
+
+.cardcontainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.song_card_text {
+    padding-top: 5px;
+}
+
+.song_card_text>p {
+    margin-top: 7px;
+}
+
+.card {
+    position: relative;
 }
