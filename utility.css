@@ -50,6 +50,7 @@
     height: 15px;
     align-items: center;
     margin-left: 15px;
+    cursor: pointer;
 }
 .english-capsule{
     align-items: center;
@@ -112,4 +113,18 @@
 /* Handle on hover */
 .scroll-container::-webkit-scrollbar-thumb:hover {
     background-color: #666; /* Handle color on hover */
+}
+
+.left-side-playbtn svg{
+    width: 36px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: -3px;
+    font-size: 5px;
+}
+.left-side-playbtn{
+    display: flex;
+    font-size: 12px;
+    align-items: center;
+    justify-content: center;
 }

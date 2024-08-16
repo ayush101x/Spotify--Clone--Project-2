@@ -9,12 +9,15 @@
     margin-left: -4px;
     padding: 4px;
     max-height: 97.8vh;
+    position: relative;
 }
+
 .logo {
     margin-top: -3px;
 }
 
 .home ul li {
+    cursor: pointer;
     display: flex;
     width: 23px;
     align-items: center;
@@ -34,6 +37,7 @@
 }
 
 .heading {
+    cursor: pointer;
     align-items: center;
 }
 
@@ -59,7 +63,7 @@
 .footer {
     gap: 10px;
     position: absolute;
-    bottom: 80px;
+    bottom: 20px;
 }
 
 .footer a {
@@ -78,19 +82,30 @@
 }
 
 .signupbtn {
-
     margin-right: 30px;
     font-size: 16px;
     font-weight: bold;
+    cursor: pointer;
+    color: #b2b2b2;
+}
+
+.signupbtn:hover {
+    color: white;
+    font-size: 17px;
 }
 
 .loginbtn {
     color: black;
     font-size: 16px;
     font-weight: bold;
+    cursor: pointer;
 }
 
-.button button {
+.btns button:hover {
+    background-color: #b2b2b2;
+}
+
+.btns button {
     border-radius: 30px;
     padding-top: 15px;
     padding-bottom: 15px;
@@ -104,6 +119,8 @@
     font: bold;
     font-size: 12px;
     margin-top: -5PX;
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
 }
 
 .spotifyplaylist .card {
@@ -117,7 +134,6 @@
 .cardcontainer>:hover {
     background-color: rgba(128, 128, 128, 0.119);
     border-radius: 8px;
-
 }
 
 .card img {
@@ -130,6 +146,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    cursor: pointer;
 }
 
 .song_card_text {
@@ -142,4 +159,48 @@
 
 .card {
     position: relative;
+}
+
+.playbar {
+    position: absolute;
+    bottom: 10px;
+    width: 98%;
+    background-color: #aaa8a8;
+
+}
+
+.songsbtn {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px;
+}
+
+.cardcontainer {
+    display: flex;
+    flex-direction: column;
+    bottom: 0;
+}
+
+.songlist ul {
+    padding: 0px 20px;
+    font-size: 14px;
+}
+
+.songlist ul li {
+    height: 45px;
+    width: 225px;
+    border: 2px solid white;
+    border-radius: 5px;
+    margin-top: 10px;
+    justify-content: space-around;
+    list-style-type: decimal;
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    padding: 0px 10px;  /* top-bottom 12px      left-right 0px*/
+}
+
+.songlist ul li img {
+    width: 50px;
 }
