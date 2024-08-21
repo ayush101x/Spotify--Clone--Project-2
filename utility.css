@@ -1,18 +1,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-        
 
+:root {
+    --bg_black: black;
+    --maincolor_lightGray: #121212;
+    --bg_white :white;
+    --font_white : white;
+    --font_gray : gray;
+    --font_black : black;
+    --card_container_hover_bg : rgba(128, 128, 128, 0.119);
+    --play_bar_container_bg : #121212;
+    --seekbar_color_white : white;
+    --seekbar_circle_color : #008cff;
+}
 * {
     margin: 0;
     padding: 0;
     font-family: "Roboto", sans-serif;
 }
-.justify-center{
+
+.justify-center {
     justify-content: center;
 }
-.align{
+
+.align {
     align-items: center;
 }
-.border-radius{
+
+.border-radius {
     border-radius: 7px;
 }
 
@@ -25,22 +39,24 @@
 }
 
 .bg-black {
-    background-color: black;
-    color: white;
+    background-color: var(--bg_black);
+    color: var(--font_white);
 }
 
 .bg-gray {
-    background-color: #121212;
-    color: white;
+    background-color: var(--maincolor_lightGray);
+    color: var(--font_white);
 }
-.m-1{
+
+.m-1 {
     margin: 5px;
 }
 
-.p-1{
+.p-1 {
     padding: 10px;
 }
-.capsule{
+
+.capsule {
     display: flex;
     border: 2px solid white;
     border-radius: 20px;
@@ -52,14 +68,16 @@
     margin-left: 15px;
     cursor: pointer;
 }
-.english-capsule{
+
+.english-capsule {
     align-items: center;
     font-size: 10xp;
     font-weight: 400;
     margin: 3px;
     padding: 7px;
 }
-.arrow-image-navbar{
+
+.arrow-image-navbar {
     justify-content: center;
     width: 18px;
     padding: 10px;
@@ -68,7 +86,7 @@
     margin: 3px;
 }
 
-.playicon svg{
+.playicon svg {
     width: 50px;
     position: absolute;
     top: 126px;
@@ -76,6 +94,7 @@
     /* opacity: 0; */
     /* transition: all 1s ease-out; */
 }
+
 /* .playicon svg :hover{
     opacity: 1;
     top: 126px;
@@ -83,67 +102,100 @@
 
 /* Container styles for scroll bar*/
 .scroll-container {
-    width: 97.9%; /* Adjust as needed */
+    width: 97.9%;
+    /* Adjust as needed */
     height: 85vh;
-    overflow-x: hidden; /* Hide horizontal scrollbar */
-    overflow-y: auto; /* Ensure vertical scrollbar is shown if needed */
+    overflow-x: hidden;
+    /* Hide horizontal scrollbar */
+    overflow-y: auto;
+    /* Ensure vertical scrollbar is shown if needed */
     padding: 10px;
-    background-color: #1a1a1a; /* Dark background color for the container */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Optional: shadow for better appearance */
+    background-color: #1a1a1a;
+    /* Dark background color for the container */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    /* Optional: shadow for better appearance */
 }
 
 /* General scrollbar styles for the container */
 .scroll-container::-webkit-scrollbar {
-    width: 12px; /* Width of the scrollbar */
-    background-color: #2a2a2a; /* Background color of the scrollbar track */
+    width: 12px;
+    /* Width of the scrollbar */
+    background-color: #2a2a2a;
+    /* Background color of the scrollbar track */
 }
 
 /* Track (part of the scrollbar not covered by the thumb) */
 .scroll-container::-webkit-scrollbar-track {
-    background-color: #2a2a2a; /* Track color */
-    border-radius: 6px; /* Rounded corners for the track */
+    background-color: #2a2a2a;
+    /* Track color */
+    border-radius: 6px;
+    /* Rounded corners for the track */
 }
 
 /* Handle (the draggable part of the scrollbar) */
 .scroll-container::-webkit-scrollbar-thumb {
-    background-color: #444; /* Handle color */
-    border-radius: 6px; /* Rounded corners for the handle */
+    background-color: #444;
+    /* Handle color */
+    border-radius: 6px;
+    /* Rounded corners for the handle */
 }
 
 /* Handle on hover */
 .scroll-container::-webkit-scrollbar-thumb:hover {
-    background-color: #666; /* Handle color on hover */
+    background-color: #666;
+    /* Handle color on hover */
 }
 
-.left-side-playbtn svg{
+.left-side-playbtn svg {
     width: 36px;
     align-items: center;
     justify-content: center;
     margin-bottom: -3px;
     font-size: 5px;
 }
-.left-side-playbtn{
+
+.left-side-playbtn {
     display: flex;
     font-size: 12px;
     align-items: center;
     justify-content: center;
 }
 
-.info{
-    width: 344px;
+.info {
+    width: 140px;
 }
 
-/* Player bottom */
-.seek-bar {
-    width: 100%;
-    border-radius: 5px;
-}
-.seek-bar input[type="range"] {
-    width: 100%;
-    border: none;
+.info div {
+    word-break: break-all;
 }
 
+.nav {
+    display: flex;
+}
 
+.hamburger img {
+    margin-top: 5px;
+    padding-right: 20px;
+    width: 40px;
+    display: none;
+    z-index: -1;
+}
 
+.closeHamberger {
+    display: none;
+}
 
+.volume {
+    width: 1140px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.volume img {
+    width: 40px;
+}
+.range{
+    display: flex;
+    padding: 0px 30px 0px 5px;
+}
 
