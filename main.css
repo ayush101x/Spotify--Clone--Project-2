@@ -1,5 +1,3 @@
-
-
 .left {
     width: 20vw;
     padding: 4px;
@@ -81,7 +79,8 @@
     padding: 12px;
     align-items: center;
 }
-.NavigationBar{
+
+.NavigationBar {
     width: 97.5%;
 }
 
@@ -139,17 +138,28 @@
     border-radius: 8px;
 }
 
-.card img {
-    width: 100%;
+.card>img {
+    max-width: 100%;
+    max-height: 100%;
     object-fit: contain;
     border-radius: 8px;
+    object-position: center;
+}
+
+.card-body {
+    height: 190px;
+    width: 190px;
+    overflow: hidden;
+    display: flex; /* add this to make the image center horizontally and vertically */
+    justify-content: center;
+    align-items: center;
 }
 
 .cardcontainer {
     display: flex;
     flex-wrap: wrap;
     cursor: pointer;
-    justify-content: space-around;
+    justify-content: flex-start;
     padding: 10px 0px 0px 20px;
     padding-bottom: 100px;
 }
@@ -190,8 +200,7 @@
 }
 
 .songlist ul li {
-    margin-left: -22px;
-    height: 50px;
+    margin-left: -13px;
     width: 245px;
     border: 1px solid white;
     border-radius: 5px;
@@ -201,7 +210,7 @@
     display: flex;
     cursor: pointer;
     align-items: center;
-    padding: 0px 4px;
+    padding: 4px 4px;
     /* top-bottom 12px      left-right 0px*/
 }
 
@@ -241,7 +250,7 @@
 }
 
 
-#play{
+#play {
     width: 34px;
 }
 
@@ -251,12 +260,12 @@
     position: fixed;
     bottom: 17px;
     height: 80px;
-    width: 74.9%;
+    width: 75.8%;
     padding: 10px;
     background-color: var(--play_bar_container_bg);
     border: 1px solid white;
 }
-    
+
 .seek-bar {
     left: 0%;
     bottom: 0;
@@ -268,9 +277,9 @@
     margin: 6px;
     margin-left: 29px;
     cursor: pointer;
-  }
-  
-  .circle {
+}
+
+.circle {
     height: 16px;
     width: 16px;
     background-color: var(--seekbar_circle_color);
@@ -280,5 +289,11 @@
     left: 0%;
     transition: left 0.5s;
     cursor: pointer;
-  }
+}
 
+.volume {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 85%;
+}

@@ -5,8 +5,9 @@
         position: absolute;
         transition: all .5s;
         z-index: 1;
-        width: 380px;
+        width: 372px;
     }
+ 
 
 
     .home {
@@ -68,19 +69,19 @@
         padding-bottom: 15px;
     }
 
-    
-    
+
+
     .NavigationBar {
         width: 93.4%;
     }
-    
+
     .hamburger img {
         margin-top: 5px;
         padding-right: 10px;
         width: 36px;
         display: flex;
     }
-    
+
     .arrow-image-navbar {
         justify-content: center;
         width: 14px;
@@ -89,7 +90,7 @@
         border-radius: 100px;
         margin: 3px;
     }
-    
+
     .signupbtn {
         margin-right: 10px;
         font-size: 14px;
@@ -97,20 +98,23 @@
         cursor: pointer;
         color: #b2b2b2;
     }
+
     .signupbtn:hover {
         color: var(--font_white);
         font-size: 15px;
     }
-    
+
     .btns button {
         border-radius: 50px;
         padding-top: 12px;
         padding-bottom: 12px;
         width: 90px;
     }
+
     .btns button:hover {
         background-color: #b2b2b2;
     }
+
     .scroll-container {
         width: 93.9%;
         height: 89%;
@@ -119,13 +123,16 @@
         padding: 10px;
         background-color: #1a1a1a;
     }
+
     .spotifyplaylist .card {
-        width: 259px;
-        height: 300px;
-        margin-top: 25px;
+        width: 200px;
+        height: 220px;
+        margin-top: 20px;
         margin-right: 20px;
         padding: 10px 10px 10px 10px;
     }
+
+
     /* Green Play Button on Album at Right bottom cornor*/
     .playicon svg {
         width: 70px;
@@ -138,8 +145,8 @@
 
     .play-bar-container {
         position: fixed;
-        bottom: 30px;
-        height: 120px;
+        bottom: 13px;
+        height: 130px;
         width: 83.9%;
         padding: 5px;
         background-color: var(--maincolor_lightGray);
@@ -148,22 +155,13 @@
 
     .songsbtn {
         position: absolute;
-        top: 50px;
+        top: 70px;
         left: 50%;
         transform: translateX(-50%);
         display: flex;
         justify-content: center;
         align-items: center;
-        gap: 20px;
-        padding: 10px;
-        cursor: pointer;
-    }
-
-    .songsbtn {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 20px;
+        gap: 10px;
         padding: 10px;
         cursor: pointer;
     }
@@ -176,6 +174,9 @@
         text-align: left;
         font-weight: 300;
         font-size: 14px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
     }
 
     .seek-bar {
@@ -190,6 +191,7 @@
         margin-left: 10px;
         cursor: pointer;
     }
+
     .cardcontainer {
         display: flex;
         flex-wrap: wrap;
@@ -199,20 +201,40 @@
         padding-bottom: 150px;
     }
 
-    #h1
-    {
+    #h1 {
         margin-top: 20px;
     }
-    .info div{
+
+    .info div {
         word-break: break-all;
     }
-    
-    .volume img {
-        width: 30px;
-    }
-    .range {
+
+    .volume {
         display: flex;
-        padding: 0px 5px 0px 3px;
+        justify-content: center;
+        padding-top: 45px;
+        margin-left: 6px;
+        width: 330px;
+        padding-left: 0;
     }
 
+
+    .volume img {
+        width: 25px;
+        margin-top: -6px;
+    }
+
+    .song-text{
+        width: 231px;
+        text-wrap: wrap;
+    }
+
+    .card-body {
+        height: 190px;
+        width: 190px;
+        overflow: hidden;
+        display: flex; /* add this to make the image center horizontally and vertically */
+        justify-content: center;
+        align-items: center;
+    }
 }
